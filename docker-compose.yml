@@ -1,0 +1,17 @@
+services:
+  postgres:
+    container_name: jwt_spring_security
+    image: postgres:17.5-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PG_DATA: /data/postgres
+      POSTGRES_DB: jwt_spring_security
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres:
