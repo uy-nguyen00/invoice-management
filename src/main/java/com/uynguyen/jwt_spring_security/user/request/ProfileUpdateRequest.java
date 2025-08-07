@@ -1,5 +1,7 @@
 package com.uynguyen.jwt_spring_security.user.request;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -11,7 +13,14 @@ import java.time.LocalDate;
 @Builder
 public class ProfileUpdateRequest {
 
+    @NotNull
+    @NotEmpty
     private String firstName;
+
+    @NotNull
+    @NotEmpty
     private String lastName;
+
+    @NotNull
     private LocalDate dateOfBirth;
 }
