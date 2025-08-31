@@ -61,7 +61,7 @@ public class JwtService {
                 .before(new Date());
     }
 
-    private String extractUsernameFromToken(String token) {
+    public String extractUsernameFromToken(String token) {
         return extractClaims(token).getSubject();
     }
 
