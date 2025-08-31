@@ -17,4 +17,6 @@ spring:
         format_sql: true
 app:
   security:
-    
+    jwt:
+      access-token-expiration: 86400000 # 24 hours for local testing, 15mins are recommended for prod
+      refresh-token-expiration: 604800000
