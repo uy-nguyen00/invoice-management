@@ -17,7 +17,7 @@ public class RegistrationRequest {
 
     @NotBlank(message = "VALIDATION.REGISTRATION.FIRSTNAME.NOT_BLANK")
     @Size(
-            min = 5,
+            min = 1,
             max = 50,
             message = "VALIDATION.REGISTRATION.FIRSTNAME.SIZE"
     )
