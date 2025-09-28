@@ -1,5 +1,6 @@
 package com.uynguyen.jwt_spring_security.auth.request;
 
+import com.uynguyen.jwt_spring_security.validation.NonDisposableEmail;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -42,8 +43,8 @@ public class RegistrationRequest {
 
     @NotBlank(message = "VALIDATION.REGISTRATION.EMAIL.BLANK")
     @Email(message = "VALIDATION.REGISTRATION.EMAIL.FORMAT")
-//    @NonDisposableEmail(message = "VALIDATION.REGISTRATION.EMAIL.DISPOSABLE")
-    @Schema(example = "ali@mail.com")
+    @NonDisposableEmail(message = "VALIDATION.REGISTRATION.EMAIL.DISPOSABLE")
+    @Schema(example = "example@mail.com")
     private String email;
 
     @NotBlank(message = "VALIDATION.REGISTRATION.PHONE.BLANK")
