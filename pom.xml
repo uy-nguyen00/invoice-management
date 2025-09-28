@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.uynguyen</groupId>
-	<artifactId>jwt-spring-security</artifactId>
+	<artifactId>invoice-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>jwt-spring-security</name>
+	<name>invoice-management</name>
 	<description>Spring Boot project implementing JWT asymmetric ecryption</description>
 	<url/>
 	<licenses>

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: jwt-spring-security
+    name: invoice-management
   config:
     import: optional:file:.env[.properties]
   datasource:

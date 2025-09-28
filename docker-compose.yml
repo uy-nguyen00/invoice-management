@@ -1,12 +1,12 @@
 services:
   postgres:
-    container_name: jwt_spring_security
+    container_name: invoice-management
     image: postgres:17.5-alpine
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       PG_DATA: /data/postgres
-      POSTGRES_DB: jwt_spring_security
+      POSTGRES_DB: invoice-management
     volumes:
       - postgres:/data/postgres
     ports:
